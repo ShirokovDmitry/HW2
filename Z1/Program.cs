@@ -5,6 +5,13 @@
 
 Console.WriteLine("Введите трехзначное число: ");
 int num = Convert.ToInt32(Console.ReadLine());
-int num2 = (num/10)%10;
 
-Console.WriteLine("Вторая цифра: " + num2);
+if (num > 100 && num < 999)
+{
+    int num2 = (num/10)%10;
+    Console.WriteLine(num2);
+}
+else
+{
+    Console.WriteLine("Число не трехзначное");
+}
